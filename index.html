@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Encabezado sin bootstrap -->
+    <header class="header">
+        <h1 class="header__title"> Desafío Bootstrap / Aplicando Bootstrap desde 0 </h1>
+    </header>
+    <!-- Navegador con Boostrap - menú hamburgesa que se cambia a: 768px  -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Bootstrap - Desafío</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/otra.html">Otra Página</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Galería de 3 fotos responsive con descripción  -->
+    <main class="pagina-principal container">
+        <div class="card bg-light text-white mt-4">
+            <img class="card-img" src="img/imgprincipal.jpg" alt="Card image">
+            <div class="card-img-overlay">
+                <h5 class="card-title paginaprincipal__textooverlay">¡Bienvenidx!</h5>
+                <p class="card-text paginaprincipal__texto2overlay">Esperamos disfrutes tu visita a nuestra página</p>
+            </div>
+        </div>
+        <div class="row mt-4 mb-3">
+            <div class="col-md-4 col-sm-12">
+                <img class="img-fluid rounded" src="img/imgmain1.jpg" alt="img 1">
+                <p class="pagina-principal__texto">Esta es una puesta de sol</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img class="img-fluid rounded" src="img/imgmain2.jpg" alt="img 2">
+                <p class="pagina-principal__texto">Este es un velero en el mar</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img class="img-fluid rounded" src="img/imgimain3.jpg" alt="img 3">
+                <p class="pagina-principal__texto">Este es un mar tranquilo</p>
+            </div>
+        </div>
+    </main>
+    <!-- NAV en footer mostrando logo y barra de busqueda -->
+    <footer class="footer">
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/img/logoipsum-logo-9.svg" alt="" width="200" height="24">
+                </a>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </footer>
+</body>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</html>
